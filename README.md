@@ -8,8 +8,8 @@ For our task, we used <a href=https://cocodataset.org/#download> MSCOCO-2017 </a
 ### Data Pre-processing: 
 The preprocessing phase can be split into three main procedures:  
 **1. Creating the captions vocabulary:**  
-First we added <start> and <end> tokens to each caption, then we created a vocabulary that contains the 5000 most frequent words in all captions.
-**2. Image preprocessing and feature extraction:** 
+First we added <start> and <end> tokens to each caption, then we created a vocabulary that contains the 5000 most frequent words in all captions. 
+**2. Image preprocessing and feature extraction:**  
 We first resized the images into (224, 244) to be compatible with the VGG-16 input layer, then the images were converted from RGB to BGR, and each color channel is zero-centered.
 We then used a pretrained VGG-16 model to extract the features from these pre-processed images and stored them to be later passed to our model.
 
