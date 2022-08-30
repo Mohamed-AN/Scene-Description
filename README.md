@@ -5,7 +5,7 @@ Being able to automatically describe the content of an image using properly form
 ### Dataset used:
 For our task, we used <a href=https://cocodataset.org/#download> MSCOCO-2017 </a>, it contains 118K images each with approximately captions.
 
-### Data Pre-processing:
+### Data Pre-processing: 
 The preprocessing phase can be split into three main procedures:  
 **1. Creating the captions vocabulary:**  
 First we added <start> and <end> tokens to each caption, then we created a vocabulary that contains the 5000 most frequent words in all captions.
